@@ -51,7 +51,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine','ejs');
 
 //Starting the server at port 3000
-app.listen(3000, function() { 
-  console.log('Server running on port 3000'); 
+app.listen(10000, function() { 
+  console.log('Server running on port 10000'); 
   console.log("Initiating Our Project :) ");
 });
