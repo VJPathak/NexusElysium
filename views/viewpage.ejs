@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Links website</title>
+<style>
+
+html, body {
+	/* display: flex; */
+	width: 100%;
+	height: 100%;
+
+	/* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1205%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsRadialGradient1206%26quot%3b)'%3e%3c/rect%3e%3cpath d='M720 1052.68C924.04 1067.52 1119.45 968.75 1264.33 824.33 1409.45 679.68 1513.85 484.1 1495.34 280 1477.94 88.08 1315.6-43.23 1173.91-173.91 1040.51-296.93 900.84-419.54 720-435.02 524.25-451.79 328.15-389.15 181.06-258.94 24.75-120.61-102.03 71.72-87.94 280-74.37 480.16 104.5 611.82 249.5 750.5 389.57 884.42 526.74 1038.58 720 1052.68' fill='rgba(43%2c 45%2c 69%2c 1)'%3e%3c/path%3e%3cpath d='M720 892.81C881.83 904.59 1036.8 826.25 1151.71 711.71 1266.8 596.99 1349.6 441.87 1334.93 280 1321.13 127.79 1192.37 23.64 1080-80 974.2-177.56 863.43-274.81 720-287.09 564.75-300.38 409.22-250.7 292.57-147.43 168.6-37.72 68.04 114.81 79.22 280 89.98 438.75 231.85 543.17 346.85 653.15 457.94 759.37 566.73 881.63 720 892.81' fill='rgba(86%2c 93%2c 151%2c 1)'%3e%3c/path%3e%3cpath d='M720 732.95C839.61 741.65 954.16 683.75 1039.09 599.09 1124.16 514.29 1185.36 399.65 1174.51 280 1164.31 167.49 1069.15 90.52 986.08 13.92 907.88-58.2 826.01-130.07 720-139.15 605.25-148.98 490.3-112.26 404.07-35.93 312.44 45.16 238.12 157.91 246.38 280 254.34 397.33 359.19 474.51 444.19 555.81 526.3 634.31 606.71 724.69 720 732.95' fill='%231c538e'%3e%3c/path%3e%3cpath d='M720 573.08C797.4 578.72 871.51 541.25 926.47 486.47 981.51 431.6 1021.11 357.42 1014.1 280 1007.5 207.2 945.92 157.39 892.17 107.83 841.57 61.17 788.6 14.66 720 8.78 645.75 2.43 571.37 26.19 515.58 75.58 456.29 128.05 408.19 201 413.54 280 418.69 355.92 486.54 405.86 541.54 458.46 594.67 509.26 646.7 567.74 720 573.08' fill='%232774c6'%3e%3c/path%3e%3cpath d='M720 413.22C755.18 415.78 788.87 398.75 813.85 373.85 838.87 348.91 856.87 315.19 853.68 280 850.68 246.91 822.69 224.27 798.26 201.74 775.26 180.53 751.18 159.39 720 156.72 686.25 153.83 652.44 164.63 627.08 187.08 600.13 210.93 578.27 244.09 580.7 280 583.04 314.51 613.88 337.21 638.88 361.12 663.03 384.21 686.68 410.79 720 413.22' fill='%23488fdb'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1205'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='0%25' cy='50%25' r='1466.97' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1206'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(30%2c 85%2c 156%2c 1)' offset='1'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
+          background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      /* overflow: hidden; */
+      animation: animateBackground 25s linear infinite;
+
+
+
+
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.3px;
+}
+
+
+@keyframes animateBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  align-items: center;
+}
+
+.link {
+  min-width: 50% !important;
+}
+
+@media (min-width: 1200px) {.container {
+  max-width: 1140px;}
+}
+@media (min-width: 992px) {.container {
+  max-width: 960px;}
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+
+.link {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+  }
+}
+
+.w3-purple, .w3-hover-purple:hover {
+color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
+}
+
+#input-container {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  /* display: block; */
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #f1f6f1;
+  border-radius: 5px;
+align-content: center;
+  color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
+
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 150px; /* Adjust this value to make the dropdown scrollable */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    min-height: 500px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+
+
+
+
+.hide {
+  display: none;
+}
+.myDIV:hover + .hide {
+  display: block;
+  color: rgb(240, 233, 233);
+}
+
+
+input::file-selector-button {
+  background-image: linear-gradient(
+    to right,
+    #ff7a18,
+    #af002d,
+    #319197 100%,
+    #319197 200%
+  );
+  background-position-x: 0%;
+  background-size: 300%;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  text-shadow: 0 1px 1px #333;
+  transition: all 0.25s;
+}
+input::file-selector-button:hover {
+  background-position-x: 100%;
+  transform: scale(1.1);
+}
+
+.logo-text {
+          /* margin-top: 11px; */
+          color:#e46a49;
+          font-size: 37px;
+          line-height: 30px;
+          font-weight: 300;
+        }
+
+.div11 {
+  /* background-color: lightgrey; */
+  width: 80%;
+  /* padding: 50px; */
+  /* margin: 20px; */
+}
+
+.shadow11 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #e46a49;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: #b5b8ba;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .feature-list {
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  .feature-list h2 {
+    font-size: 1.8rem;
+    color: #e46a49;
+    margin-bottom: 10px;
+  }
+
+  .feature-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .feature-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .button11 {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.aa{ text-decoration: none;}
+
+
+</style>
+  </head>
+
+
+  <body class="w3-white">
+
+    <!-- <%= JSON.stringify(dataa) %> -->
+
+    
+    <div class="logo-text">
+      <a  class="aa" href="/homepage">
+        <img src="img.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="100px" style="border-radius: 50%;">
+        Nexus<strong data-new-link="true"><b>ELYSIUM</b></strong></a>
+        </div><br>
+
+    <% 
+    value ={}
+    const data = JSON.parse(JSON.stringify(dataa));
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            console.log(key);         // Output: Twitter, Facebook
+            value[key] = []
+            // Accessing array values for each key
+            for (let i = 0; i < data[key].length; i++) {
+                <!-- console.log(data[key][i]);  // Output: for Twitter: "Paste Your Link"; for Facebook: "Paste Your Link1", "Paste Your Link2" -->
+                value[key].push(data[key][i]);
+            }
+        }
+    }
+    console.log("ur values are")
+    console.log(value)
+    
+    %>
+
+    <!-- Content container -->
+    <div class="container">
+
+      <!-- <form action="/uploadimage" method="POST" enctype="multipart/form-data"> -->
+        <form action="/upload" method="post" enctype="multipart/form-data">
+        
+        <!-- <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit"> -->
+
+      <!-- Image and name container. Change to your picture here. -->
+    <div class="image-container">
+
+      <label for="fname">
+        <div class="w3-text-white">
+          <!-- <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><input type="text" name="userName" value="Ur Name"></span> link site!</p> -->
+          <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><%= dataaa %></span> link site!</p>
+          
+          <center><p class="w3-large"><strong>See what I am up to.</strong></p></center>
+        </div>
+      </label>
+
+
+
+        <!-- <div class="myDIV">
+          <div class="myDIV" onclick="importData()"> 
+          <img src="imagee.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%;">
+        </div> -->
+
+
+
+
+        <!-- <div class="hide"><b>Time To Change Ur Icon! :)</b></div> -->
+
+          <!-- <input type="file" name="imageFile" id="imageFile" required><br><br> -->
+          <!-- <input type="file" name="file" required><br><br> -->
+          <!-- <input type="submit"> -->
+
+          <!-- <img id="outputImage" src="" alt="Selected Image">
+          <br><br>
+          <textarea id="base64Output" rows="10" cols="50" readonly></textarea>
+       -->
+
+
+
+      <!-- <div class="myDIV"><img src="imagee.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%;"></div>
+      <div class="hide"><b>Change Profile Photo..?</b></div> -->
+
+    <!-- Links section 1. Replace the # inside of the "" with your links. -->
+    <div class="links-container">
+
+        <% 
+            const lengths = {};
+
+            // Iterate through each key in the data object
+            for (const key in value) {
+            if (data.hasOwnProperty(key)) {
+                // Calculate the length of the array for the current key
+                lengths[key] = value[key].length;
+            }
+            }
+            
+            console.log("Lengths Of Socials: ")
+            console.log(lengths);
+        
+        %>
+
+      
+      <!-- <a href="#" class="w3-button w3-hover-blue w3-large w3-round w3-purple w3-border link"><li href="#" class="fa fa-facebook"></li>&nbsp&nbsp&nbsp&nbsp Facebook</a>
+      <br>
+      <a href="#" class="w3-button w3-hover-blue w3-large w3-round w3-purple w3-border link"><li href="#" class="fa fa-twitter"></li>&nbsp&nbsp&nbsp&nbsp Twitter</a>
+      <br>
+      <a href="#" class="w3-button w3-hover-blue w3-large w3-round w3-purple w3-border link"><li href="#" class="fa fa-google"></li>&nbsp&nbsp&nbsp&nbsp Google</a>
+      <br> -->
+
+      <% 
+      for (const key in value) {
+        if (value.hasOwnProperty(key)) {
+          console.log(`Platform: ${key}`);
+
+          switch (key) {
+
+            // case 'Personal':
+            //   text = "Off";
+            //   break;
+
+            case 'Facebook':
+              console.log("Value is Facebook");
+              a = 'fa fa-facebook';
+              break;
+
+            case 'Twitter':
+            console.log("Value is Twitter");
+            a = 'fa fa-twitter';
+              break;
+
+            default:
+              break;
+          }
+      
+          // Access each value in the array for the current key
+          value[key].forEach((value1, index) => {
+            console.log(`  Link ${index + 1}: ${value1}`);
+            %>
+
+
+            <br>
+
+            <a href="<%= value1 %>" class="w3-button w3-hover-blue w3-large w3-round w3-purple w3-border link"><li href="#" class="<%= a %>"></li>&nbsp&nbsp&nbsp&nbsp <%= key %></a>
+            <br>
+
+
+<%
+          });
+        }
+      }
+  
+  %>
+
+
+
+
+
+      <!-- <div class="dropdown">
+        <button class="dropdown-button">Select an option</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="socialType('Personal')">Personal Website</a>
+            <a href="#" onclick="socialType('Facebook')"><li href="#" class="fa fa-facebook"></li>&nbsp&nbsp&nbsp&nbsp Facebook</a>
+            <a href="#" onclick="socialType('Twitter')"><li href="#" class="fa fa-twitter"></li>&nbsp&nbsp&nbsp Twitter</a>
+            <a href="#" onclick="socialType('Google')"><li href="#" class="fa fa-google"></li>&nbsp&nbsp&nbsp Google</a>
+            <a href="#" onclick="socialType('LinkedIn')"><li href="#" class="fa fa-linkedin"></li>&nbsp&nbsp&nbsp LinkedIn</a>
+            <a href="#" onclick="socialType('Youtube')"><li href="#" class="fa fa-youtube"></li>&nbsp&nbsp&nbsp Youtube</a>
+            <a href="#" onclick="socialType('Instagram')"><li href="#" class="fa fa-instagram"></li>&nbsp&nbsp&nbsp Instagram</a>
+            <a href="#" onclick="socialType('Pinterest')"><li href="#" class="fa fa-pinterest"></li>&nbsp&nbsp&nbsp Pinterest</a>
+            <a href="#" onclick="socialType('Snapchat')"><li href="#" class="fa fa-snapchat-ghost"></li>&nbsp&nbsp&nbsp Snapchat</a>
+            <a href="#" onclick="socialType('Skype')"><li href="#" class="fa fa-skype"></li>&nbsp&nbsp&nbsp Skype</a>
+            <a href="#" onclick="socialType('Dribbble')"><li href="#" class="fa fa-dribbble"></li>&nbsp&nbsp&nbsp Dribbble</a>
+            <a href="#" onclick="socialType('Tumblr')"><li href="#" class="fa fa-tumblr"></li>&nbsp&nbsp&nbsp Tumblr</a>
+            <a href="#" onclick="socialType('Yahoo')"><li href="#" class="fa fa-yahoo"></li>&nbsp&nbsp&nbsp Yahoo</a>
+            <a href="#" onclick="socialType('Reddit')"><li href="#" class="fa fa-reddit"></li>&nbsp&nbsp&nbsp Reddit</a> -->
+            
+        </div> 
+
+        <!-- <div id="input-container">
+        
+        </div> -->
+<!-- <input type="hidden" id="socialInput" name="social"> -->
+    <!-- </div> -->
+
+
+    </div>
+  </div>
+
+  <br>
+  <!-- <center><input type="submit" value="Save Changes" class="dropdown-button"></center> -->
+
+</form> 
+</div>
+
+<!-- 
+
+  <script>
+    document.getElementById('add-input-btn').addEventListener('click', function() {
+  // Create a new input element
+  var newInput = document.createElement('input');
+  newInput.type = 'text';
+  newInput.class = 'w3-input w3-border w3-opacity-min';
+  newInput.name = 'dynamic-input[]'; // Use an array name to handle multiple inputs
+
+  // Append the new input to the container
+  document.getElementById('input-container').appendChild(newInput);
+});
+  </script> -->
+
+  <!-- <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('imageFile').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        const base64String = e.target.result;
+
+                        // Display the image
+                        document.getElementById('outputImage').src = base64String;
+
+                        // Display the base64 string
+                        console.log(base64String);
+                        document.getElementById('base64Output').textContent = base64String;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    
+    </script> -->
+<br>
+    <center>
+        
+            <div class="div11">
+                <div class="shadow11">
+                <div class="container">
+                    <h1>Welcome to our NexusElysium web application! Wanna make urs..?</h1>
+                    <a href="/homepage"><button class="button11">Create My Nexus</button></a>
+                    <p>Whether you're an influencer, creator, or business professional, our platform provides a seamless way to centralize and share all your important links in one place.</p>
+                    <br>
+                    <!-- <div class="feature-list">
+                      <h2>Key Features</h2>
+                      <ul>
+                        <li><strong>Centralized Link Management:</strong> Easily organize and display links to your social media profiles, websites, blogs, and more.</li>
+                        <li><strong>Customizable Appearance:</strong> Personalize your NexusElysium page with custom themes, colors, and backgrounds that reflect your brand or personality.</li>
+                        <li><strong>User-Friendly Dashboard:</strong> Manage your links effortlessly through an intuitive dashboard. Add, edit, or delete links with just a few clicks.</li>
+                        <li><strong>Analytics Insights:</strong> Gain valuable insights into how your audience interacts with your links. Track clicks and engagement to optimize your online presence.</li>
+                      </ul><br>
+                    </div> -->
+                  </div>
+        
+            </div>
+        </div>
+    </center>
+
+
+  </body>  
+</html>

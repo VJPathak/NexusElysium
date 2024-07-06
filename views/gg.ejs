@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Links website</title>
+<style>
+
+body {
+    background-image: url(https://www.w3schools.com/howto/img_link_tree_template1_bg.jpg); /* The image used for background*/
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  align-items: center;
+}
+
+.link {
+  min-width: 50% !important;
+}
+
+@media (min-width: 1200px) {.container {
+  max-width: 1140px;}
+}
+@media (min-width: 992px) {.container {
+  max-width: 960px;}
+}
+@media (min-width: 768px) {
+.container {
+    max-width: 720px;
+  }
+
+.link {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+.container {
+    max-width: 540px;
+  }
+}
+
+.w3-purple, .w3-hover-purple:hover {
+color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
+}
+
+#input-container {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  /* display: block; */
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #f1f6f1;
+  border-radius: 5px;
+align-content: center;
+  color: #fff!important;
+background-color: rgba(156, 39, 176, 0.6) !important;
+
+
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: #3e8e41;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    max-height: 150px; /* Adjust this value to make the dropdown scrollable */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    min-height: 500px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+
+
+
+
+.hide {
+  display: none;
+}
+.myDIV:hover + .hide {
+  display: block;
+  color: rgb(240, 233, 233);
+}
+
+
+
+</style>
+  </head>
+
+
+  <body class="w3-white">
+
+
+    
+    <!-- Content container -->
+    <div class="container">
+
+      <form action="/action_page.php">
+
+
+        <label for="fname">
+          <div class="w3-text-white">
+            <!-- <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><input type="text" name="userName" value="Ur Name"></span> link site!</p> -->
+            <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><input type="text" name="userName" value="Ur Name"></span> link site!</p>
+            
+            <center><p class="w3-large"><strong>See what I am up to.</strong></p></center>
+          </div>
+        </label><br>
+
+
+
+
+
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+
+
+        
+      </form> 
+
+      <!-- Image and name container. Change to your picture here. -->
+    <div class="image-container">
+
+
+      <div class="myDIV"><img src="imagee.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%;"></div>
+      <div class="hide"><b>Change Profile Photo..?</b></div>
+
+    <!-- <img src="imagee.png" class="w3-margin" alt="Photo by Art Hauntington" max-width="100%" height="150px" style="border-radius: 50%;"> -->
+     <div class="w3-text-white">
+     <p class="w3-text-white w3-large">Welcome to <span class="w3-tag w3-large w3-round w3-black w3-text-white"><strong>Jane's</strong></span> link site!</p>
+     <p class="w3-large"><strong>See what I am up to.</strong></p>
+      </div>
+
+    <!-- Links section 1. Replace the # inside of the "" with your links. -->
+    <!-- <div class="links-container">
+      <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-facebook"> </i>Facebook</a>
+      <br>
+      <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-instagram"> </i>Instagram</a>
+      <br>
+      <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-twitter"> </i>Twitter</a>
+      <br>
+      <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fa fa-code"> </i>Blog</a>
+
+    -->
+
+
+      <div class="dropdown">
+        <button class="dropdown-button">Select an option</button>
+        <div class="dropdown-content">
+            <a href="#" onclick="socialType('Personal')">Personal Website</a>
+            <a href="#" onclick="socialType('Facebook')"><li href="#" class="fa fa-facebook"></li>&nbsp&nbsp&nbsp&nbsp Facebook</a>
+            <a href="#" onclick="socialType('Twitter')"><li href="#" class="fa fa-twitter"></li>&nbsp&nbsp&nbsp Twitter</a>
+            <a href="#" onclick="socialType('Google')"><li href="#" class="fa fa-google"></li>&nbsp&nbsp&nbsp Google</a>
+            <a href="#" onclick="socialType('LinkedIn')"><li href="#" class="fa fa-linkedin"></li>&nbsp&nbsp&nbsp LinkedIn</a>
+            <a href="#" onclick="socialType('Youtube')"><li href="#" class="fa fa-youtube"></li>&nbsp&nbsp&nbsp Youtube</a>
+            <a href="#" onclick="socialType('Instagram')"><li href="#" class="fa fa-instagram"></li>&nbsp&nbsp&nbsp Instagram</a>
+            <a href="#" onclick="socialType('Pinterest')"><li href="#" class="fa fa-pinterest"></li>&nbsp&nbsp&nbsp Pinterest</a>
+            <a href="#" onclick="socialType('Snapchat')"><li href="#" class="fa fa-snapchat-ghost"></li>&nbsp&nbsp&nbsp Snapchat</a>
+            <a href="#" onclick="socialType('Skype')"><li href="#" class="fa fa-skype"></li>&nbsp&nbsp&nbsp Skype</a>
+            <a href="#" onclick="socialType('Dribbble')"><li href="#" class="fa fa-dribbble"></li>&nbsp&nbsp&nbsp Dribbble</a>
+            <a href="#" onclick="socialType('Tumblr')"><li href="#" class="fa fa-tumblr"></li>&nbsp&nbsp&nbsp Tumblr</a>
+            <a href="#" onclick="socialType('Yahoo')"><li href="#" class="fa fa-yahoo"></li>&nbsp&nbsp&nbsp Yahoo</a>
+            <a href="#" onclick="socialType('Reddit')"><li href="#" class="fa fa-reddit"></li>&nbsp&nbsp&nbsp Reddit</a>
+            <!-- Add more options as needed -->
+        </div>
+
+        <div id="input-container">
+        
+        </div>
+
+    <!-- </div> -->
+
+    <script>/* script.js */
+
+
+
+function socialType(a) {
+  
+  console.log(a)
+  let aa = a;
+
+  // <a href="#" class="w3-button w3-hover-pink w3-large w3-round w3-purple w3-border link" target="_blank"><i class="fab fa-facebook"> </i>Facebook</a>
+
+  // var newInput = document.createElement('input');
+  // newInput.type = 'text';
+  // newInput.class = 'w3-input w3-border w3-opacity-min';
+  // newInput.name = aa; // Use an array name to handle multiple inputs
+  // newInput.value = "Paste Your Link";
+
+
+  // document.getElementById('input-container').appendChild(newInput);
+  // document.getElementById('input-container').appendChild(newInput1);
+
+
+  var li = document.createElement('text');
+            
+            // Create a new icon element (using FontAwesome for this example)
+            var icon = document.createElement('i');
+
+            
+
+            switch (aa) {
+
+              // case 'Personal':
+              //   text = "Off";
+              //   break;
+
+              case 'Facebook':
+              icon.className = 'fa fa-facebook';
+                break;
+
+              case 'Twitter':
+              icon.className = 'fa fa-twitter';
+                break;
+
+              case 'Google':
+              icon.className = 'fa fa-google';
+                break;
+
+              case 'LinkedIn':
+              icon.className = 'fa fa-linkedin';
+                break;
+
+              case 'Youtube':
+              icon.className = 'fa fa-youtube';
+                break;
+
+              case 'Instagram':
+              icon.className = 'fa fa-instagram';
+                break;
+
+              case 'Pinterest':
+              icon.className = 'fa fa-pinterest';
+                break;
+
+              case 'Snapchat':
+              icon.className = 'fa fa-snapchat-ghost';
+                break;
+
+              case 'Skype':
+              icon.className = 'fa fa-skype';
+                break;
+
+              case 'Dribbble':
+              icon.className = 'fa fa-dribbble';
+                break;
+
+              case 'Tumblr':
+              icon.className = 'fa fa-tumblr';
+                break;
+
+              case 'Yahoo':
+              icon.className = 'fa fa-yahoo';
+                break;
+
+              case 'Reddit':
+              icon.className = 'fa fa-reddit';
+                break;
+
+              default:
+                break;
+            }
+
+            // icon.className = 'fa fa-facebook'; 
+            
+            // Create a text node
+            var text = document.createElement('input');
+            text.type = 'text';
+            text.class = 'w3-input w3-border w3-opacity-min';
+            text.name = aa; // Use an array name to handle multiple inputs
+            text.value = "Paste Your Link";
+            
+            // Append the icon and text to the list item
+            li.appendChild(icon);
+            li.appendChild(text);
+            
+            // Append the list item to the unordered list
+            document.getElementById('input-container').appendChild(li);
+
+}
+
+
+      </script>
+
+
+    </div>
+  </div>
+</div>
+
+<!-- 
+
+  <script>
+    document.getElementById('add-input-btn').addEventListener('click', function() {
+  // Create a new input element
+  var newInput = document.createElement('input');
+  newInput.type = 'text';
+  newInput.class = 'w3-input w3-border w3-opacity-min';
+  newInput.name = 'dynamic-input[]'; // Use an array name to handle multiple inputs
+
+  // Append the new input to the container
+  document.getElementById('input-container').appendChild(newInput);
+});
+  </script> -->
+
+  </body>  
+</html>
